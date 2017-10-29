@@ -494,8 +494,7 @@ quote {
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: 50%;
-  z-index: 1;
-  -webkit-backdrop-filter: saturate(120%) blur(20px); }
+  z-index: 1; }
   @media (max-width: 520px) {
     .nav {
       height: 30%; } }
@@ -568,6 +567,7 @@ quote {
     left: 0;
     background: -webkit-gradient(linear, left top, left bottom, from(#f1f1f1), color-stop(172%, transparent));
     background: linear-gradient(#f1f1f1 0%, transparent 172%);
+    -webkit-backdrop-filter: saturate(120%) blur(20px);
     z-index: 99999999; }
     .nav--fixed .nav__navigation {
       height: 55px; }
