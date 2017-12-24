@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics-->
+    <script src="https://www.googletagmanager.com/gtag/js?id=UA-50961830-5" async></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-50961830-5');
+      
+    </script>
+    <title>Magellan Code &amp; Design - Premium Webdienstleistungen, Apps, Websites &amp; Printdesign aus dem Schwarzwald</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Ziel und Anspruch von Magellan ist es, branchenbeste digitale Produkte und Dienstleistungen anzubieten.">
+    <meta name="keywords" content="webentwicklung, frontend, backend, print, webdesign, design, schwarzwald, workflow, agentur, medienagentur">
+    <!--meta(property='og:image' content='/og-image.png')-->
+    <meta property="og:description" content="Ziel und Anspruch von Magellan ist es, branchenbeste digitale Produkte und Dienstleistungen anzubieten.">
+    <link rel="shortcut icon" href="assets/images/pixel/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/images/pixel/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/assets/stylesheets/artofmagellan.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700|Playfair+Display+SC" rel="stylesheet"/>
+    <link rel="stylesheet" href="/assets/stylesheets/pagespecific/page.css"/>
+    <script src="/assets/plugins/jquery/jquery.min.js" type="text/javascript"></script>
+    <script src="/assets/plugins/waves/waves.min.js" type="text/javascript"></script>
+    <script src="/assets/javascript/interactive.min.js" type="text/javascript"></script>
+    <script src="/assets/javascript/nav.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" tpe="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js" type="text/javascript"></script>
+    <script>
+      window.addEventListener("load", function(){
+      window.cookieconsent.initialise({
+        "palette": {
+          "popup": {
+            "background": "#ffffff",
+            "text": "#595959"
+          },
+          "button": {
+            "background": "transparent",
+            "border": "#ffcc00",
+            "text": "#ffcc00"
+          }
+        },
+        "position": "bottom-right",
+        "content": {
+          "message": "Wie bei fast jeder anderen Website auch, kommen hier Cookies zum Einsatz.",
+          "dismiss": "Ay Ay!",
+          "link": "Mehr Erfahren"
+        }
+      })});
+    </script>
+  </head>
+  <body>
+    <header><img class="heroimage" src="/assets/images/pixel/blog/imageoptimization/magellan-imageoptimization-header.jpg">
+            <section class="nav"><a href="/"><img class="nav__brand" src="/assets/images/vector/magellan-brand.svg"></a>
+              <nav class="nav__navigation"><a class="nav__navigation__item btn btn--glass" href="/#kompetenzen">Kompetenzen</a><a class="nav__navigation__item btn btn--glass" href="/#impressionen">Impressionen</a><a class="nav__navigation__item btn btn--glass" href="/#team">Über mich</a><a class="nav__navigation__item btn btn--glass" href="/#kontakt">Kontakt</a><a class="nav__navigation__item btn btn__inverted" href="/#blog">Blog.</a></nav>
+            </section>
+      <section class="title">
+        <h2>Bilder automatisch Komprimieren
+        </h2>
+        <h1>Der Kompromiss zwischen Qualität und Performance
+        </h1><a class="title__cta btn btn--inverted" href="#startreading">Performance</a>
+      </section>
+    </header>
+    <main id="startreading">
+      <div class="page">
+        <p class="page__author">By <b>Jonathan Arbely</b></p><span class="page__date">24. Dezember 2017</span><span class="goldbar"></span>
+        <p class="page__text">Einer der einfachsten Wege, eine Website in der Ladezeit performanter zu machen, liegt in der Reduzierung der Dateigrößen aller verwendeten Pixelbilder.</p>
+        <p class="page__text">In der Regel gilt, zwischen Qualität und Dateigröße sowie ggf. Format einen Kompromiss zu schließen. Bei der üblichen Komprimierung mit gängiger Bildbearbeitungssoftware gehen jedoch oft wichtige Details eines Bildes verloren. Besonders bei der Verwendung des beliebten .jpg Formats.</p>
+        <p class="page__text">Die Website <a href="http://optimizilla.com/" target="_blank">Optimizilla.com</a>bietet losless Compression für bis zu 20 Bilder der Formate .jpg, .gif und .png gleichzeitig an. Zusätzlich lassen sich die komprimierten Bilder Seite an Seite mit den hochgeladenen Originalen vergleichen, um zu überprüfen, ob die automatische Kompression das gewünschte Ergebnis liefert.</p>
+        <p class="page__text">Wer seinen Workflow mit <a href="https://gulpjs.com/" target="_blank">Gulp</a> handhabt, erhält mit den beiden Modulen <a href="https://www.npmjs.com/package/gulp-image" target="_blank">gulp-image</a> oder <a href="https://www.npmjs.com/package/gulp-imagemin" target="_blank">gulp-imagemin</a> vergleichbar gute Resultate, mit dem zusätzlichen Vorteilen der geschickten Automatisierung, die Gulp möglich macht. Für Grunt gibt es vergleichbare Lösungen.</p>
+        <p class="page__text">Beim Bildformat .png (welches standardmäßig losless ist, aber in der Regel nicht so komprimierbar ist wie andere Formate und daher im Web relativ unbeliebt ist) werden alle im Bild verwendeten Farben indexiert und die Dateigröße deutlich verringert bei wenig optischem Qualitätsverlust:</p>
+        <p class="page__text">„[…] eine Methode zur Speicherung einer Rastergrafik. Bei indizierten Farben enthält die Datenstruktur jedes Pixels nicht direkt die einzelnen Farbwerte, sondern nur einen Index auf einen Eintrag einer sogenannten Farbtabelle oder Farbpalette, die die im Bild verwendeten Farben auflistet. Ein Pixel speichert hierbei – anstelle des Farbwerts – die Nummer des Tabelleneintrags, die diesen Farbwert enthält. Bilder, die nur wenige unterschiedliche Farben enthalten, sparen durch die geringe Größe des Farbindex Speicherplatz ein.“ <a href="https://de.wikipedia.org/wiki/Indizierte_Farben" target="_blank">- Indizierte Farben auf Wikipedia</a></p>
+        <p class="page__text">Diese Lösung eignet sich hervorragend für kleine Bilder und Ikonografie.</p><b class="page__text">Beispiele:</b>
+        <div class="page__image--wrapper"><img class="page__image page__image--small" src="../../assets/images/pixel/blog/imageoptimization/magellan-imageoptimization-png2.png"></div>
+        <div class="page__imagetitle">
+          <p class="page__author">/ PNG ohne Optimierung - 113kb - Photoshop CC 2017 Smallest File Format PNG</p>
+        </div>
+        <div class="page__image--wrapper"><img class="page__image page__image--small" src="../../assets/images/pixel/blog/imageoptimization/magellan-imageoptimization-png2-min.png"></div>
+        <div class="page__imagetitle">
+          <p class="page__author">/ PNG mit Optimierung - 39kb - Optimizilla.com</p>
+        </div>
+        <div class="page__image--wrapper"><img class="page__image page__image--small" src="../../assets/images/pixel/blog/imageoptimization/magellan-imageoptimization-jpg2.jpg"></div>
+        <div class="page__imagetitle">
+          <p class="page__author">/ JPG ohne Optimierung - 45kb - Photoshop CC 2017 Baseline Optimzied Stufe 10</p>
+        </div>
+        <div class="page__image--wrapper"><img class="page__image page__image--small" src="../../assets/images/pixel/blog/imageoptimization/magellan-imageoptimization-jpg2-min.jpg"></div>
+        <div class="page__imagetitle">
+          <p class="page__author">/ JPG mit Optimierung - 17.4kb - Optimizilla.com</p>
+        </div>
+        <p class="page__text">Großes Motiv:</p>
+        <div class="page__image--wrapper"><img class="page__image page__image--large" src="../../assets/images/pixel/blog/imageoptimization/magellan-imageoptimization-jpg1.jpg"></div>
+        <div class="page__imagetitle">
+          <p class="page__author">/ JPG ohne Optimierung - 302kb - Photoshop CC 2017 Baseline Optimzied Stufe 10</p>
+        </div>
+        <div class="page__image--wrapper"><img class="page__image page__image--large" src="../../assets/images/pixel/blog/imageoptimization/magellan-imageoptimization-jpg1-min.jpg"></div>
+        <div class="page__imagetitle">
+          <p class="page__author">/ JPG mit Optimierung - 153kb - Optimizilla.com</p>
+        </div>
+        <div class="page__image--wrapper"><img class="page__image page__image--large" src="../../assets/images/pixel/blog/imageoptimization/magellan-imageoptimization-png1.png"></div>
+        <div class="page__imagetitle">
+          <p class="page__author">/ PNG ohne Optimierung - 980kb - Photoshop CC 2017 Smallest File Format PNG</p>
+        </div>
+        <div class="page__image--wrapper"><img class="page__image page__image--large" src="../../assets/images/pixel/blog/imageoptimization/magellan-imageoptimization-png1-min.png"></div>
+        <div class="page__imagetitle">
+          <p class="page__author">/ PNG mit Optimierung - 285kb - Optimizilla.com</p>
+        </div>
+        <p class="page__text">Es zeigt sich, JPG eignet sich deutlich besser zur Anzeige großer Bilder als PNG. Doch gerade bei kleinen Bildern und besonders Icons mit Aplha-Channel (Transparenz) lässt sich so automatisch minimieren, egal wie das Bild vorher angespeichert wurde.</p>
+        <p class="page__text">Mögliche nächste Schritte der Bildoptimierung könnten aus Lazyloading und der Implementierung von Sourcesets bestehen. Für erfahrene Entwickler auch die Verwendung von Googles innovativem Bildformat <a href="https://developers.google.com/speed/webp/" target="_blank">WebP</a>.</p><br><span class="goldbar"></span><b class="page__author">Bildmaterial von Unsplash:</b><a class="page__text" href="https://unsplash.com/photos/u6BPMXgURuI" target="_blank">Photo by Gabriel Gurrola on Unsplash</a><a class="page__text" href="https://unsplash.com/photos/CXy_nGO0MOA" target="_blank">Photo by Rodan Can on Unsplash</a><a class="page__text" href="https://unsplash.com/photos/HX9fOoD9xN4" target="_blank">Photo by Kace Rodriguez on Unsplash</a>
+      </div>
+      <section class="loadmore c loadmore__anime"><img class="icon icon--xs" src="../../assets/images/vector/iconset/prev.svg"><a href="/#blog">Zurück zur Übersicht</a></section>
+    </main>
+  </body>
+  <footer class="c">
+    <div class="footer__inner">
+      <div class="footer__adress"><span class="ticket__description__title">Anschrift</span><br><br>
+        <p>Jonathan Arbely</p>
+        <p>78120 Furtwangen im Schwarzwald</p>
+        <p>Baden-Württemberg, DE</p><br><a href="https://www.unicef.de/spenden/unicef-pate" target="_blank" title="UNICEF-Pate werden!"><img class="footer__more--logo" src="/assets/images/vector/logos/unicef.svg"></a>
+        <p>Magellan ist UNICEF-Pate und unterstützt UNICEF monatlich mit einer Spende.</p><br><a class="footer__tax" href="/impressum.html">/ Impressum</a>
+      </div>
+      <div class="footer__aboutmagellan"><span class="ticket__description__title">Ziel & Anspruch</span><br><br>
+        <p>Ziel und Anspruch von Magellan ist es, branchenbeste digitale Produkte und Dienstleistungen anzubieten. Das wird durch aktive Kommunikation und einer hingebungsvollen Umsetzung Ihrer Anforderungen & Wünsche erreicht. Grundlagen dafür bilden ein breites Spektrum an medientechnischem Know-how und langjährige Erfahrung sowie ständige Weiterentwicklung & Verbesserung.</p><br>
+        <p>Die Zufriedenheit meiner Kunden und Projektpartner steht an erster Stelle.</p>
+        <p>Dafür gehe ich die Extrameile.</p><br><br>
+        <div class="factsdontcareaboutyourfeelings">
+          <div class="factsdontcareaboutyourfeelings__inner"><span class="factsdontcareaboutyourfeelings__numeri">18</span>
+            <p class="factsdontcareaboutyourfeelings__title">Zufriedene Kunden</p>
+          </div>
+          <div class="factsdontcareaboutyourfeelings__inner"><span class="factsdontcareaboutyourfeelings__numeri">4</span>
+            <p class="factsdontcareaboutyourfeelings__title">Jahre Erfahrung</p>
+          </div>
+          <div class="factsdontcareaboutyourfeelings__inner"><span class="factsdontcareaboutyourfeelings__numeri">2</span>
+            <p class="factsdontcareaboutyourfeelings__title">Faktor Verschlüsselung all unserer Kundendaten durch Kensington® VeriMark™ und Microsoft BitLocker</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer__hr">
+        <hr>
+      </div>
+      <div class="footer__branding"><a href="/">Magellan: Code & Design - est. 2013</a></div>
+      <div class="footer__more"><a href="https://www.instagram.com/jonathanoffroad" target="_blank"><img src="/assets/images/vector/instagram.svg"></a><span class="liluzivert liluzivert--s"></span><a href="https://github.com/jonathanarbely" target="_blank" title="Der gesamte Code dieser Website ist OpenSource und in einem Git-Repository einsehbar."><img src="/assets/images/vector/github.svg"></a></div>
+    </div>
+  </footer>
+</html>
