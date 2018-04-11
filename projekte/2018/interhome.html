@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics-->
+    <script src="https://www.googletagmanager.com/gtag/js?id=UA-50961830-5" async></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-50961830-5');
+      
+    </script>
+    <title>Magellan Code &amp; Design - Premium Webdienstleistungen, Apps, Websites &amp; Printdesign aus dem Schwarzwald</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Ziel und Anspruch von Magellan ist es, branchenbeste digitale Produkte und Dienstleistungen anzubieten.">
+    <meta name="keywords" content="webentwicklung, frontend, backend, print, webdesign, design, schwarzwald, workflow, agentur, medienagentur">
+    <meta property="og:description" content="Ziel und Anspruch von Magellan ist es, branchenbeste digitale Produkte und Dienstleistungen anzubieten.">
+    <link rel="shortcut icon" href="assets/images/pixel/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/images/pixel/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/assets/stylesheets/artofmagellan.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700|Playfair+Display+SC" rel="stylesheet"/>
+    <link rel="stylesheet" href="/assets/stylesheets/pagespecific/page.css"/>
+    <script src="/assets/plugins/jquery/jquery.min.js" type="text/javascript"></script>
+    <script src="/assets/plugins/waves/waves.min.js" type="text/javascript" async></script>
+    <script src="/assets/javascript/interactive.min.js" type="text/javascript" async></script>
+    <script src="/assets/javascript/nav.min.js" type="text/javascript" async></script>
+    <link rel="stylesheet" tpe="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" async>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js" type="text/javascript" async></script>
+    <script>
+      window.addEventListener("load", function(){
+      window.cookieconsent.initialise({
+        "palette": {
+          "popup": {
+            "background": "#ffffff",
+            "text": "#595959"
+          },
+          "button": {
+            "background": "transparent",
+            "border": "#ffcc00",
+            "text": "#ffcc00"
+          }
+        },
+        "position": "bottom-right",
+        "content": {
+          "message": "Wie bei fast jeder anderen Website auch, kommen hier Cookies zum Einsatz.",
+          "dismiss": "Okay",
+          "link": "Mehr Erfahren"
+        }
+      })});
+    </script>
+  </head>
+  <body class="contentpage">
+    <header><img class="heroimage" src="/assets/images/pixel/projects/interhome/magellan-ih.jpg">
+            <section class="nav"><a href="/"><img class="nav__brand" src="/assets/images/vector/magellan-brand.svg"></a>
+              <nav class="nav__navigation"><a class="nav__navigation__item btn btn--glass" href="/#kompetenzen">Kompetenzen</a><a class="nav__navigation__item btn btn--glass" href="/#impressionen">Impressionen</a><a class="nav__navigation__item btn btn--glass" href="/#team">Über mich</a><a class="nav__navigation__item btn btn--glass" href="/#kontakt">Kontakt</a><a class="nav__navigation__item btn btn__inverted" href="/#blog">Blog.</a></nav>
+            </section>
+      <section class="title">
+        <h2>Interhome
+        </h2>
+        <h1>Relaunch der Webpräsenz des Anbieters von über 34.000 qualitätsgeprüften Ferienhäuser und -wohnungen auf der ganzen Welt.
+        </h1><a class="title__cta btn" href="#startreading">Frontend, Design, Performance &amp; Workflow</a>
+      </section>
+    </header>
+    <main id="startreading">
+      <div class="page">
+        <p class="page__author">By <b>Jonathan Arbely</b></p><span class="page__date">April, 2018</span><span class="goldbar"></span>
+        <p class="page__text">Interhome bietet über 33.000 qualitätsgeprüfte Ferienhäuser und -wohnungen online an. Zusammen mit dem Interchalet Team in Freiburg war ich maßgeblich an der Umsetzung der neuen mobiltauglichen Website beteiligt, welche iterativ und agil mit SCRUM umgesetzt wurde.</p>
+        <p class="page__text">Mein Beitrag bestand aus der Gestaltung und Umsetzung von Teilen der Startseite, dem Großteil der Suchseite (Trefferseite) sowie der Detailseite. Jede Seite wurde iterativ Modul für Modul von mir auf Basis von Anforderungen und Feedback gestaltet und präsentiert. Nach Abnahme der Screendesigns wurden die grafischen Konzepte zunächst als statische HTML-Protoypen realisiert und anschließend mit JavaScript alle Frontendinteraktionen programmatisch umgesetzt. Auch hier unter laufender Integration von Feedback und Absprache mit den Teams in Freiburg (DE) und Glattbrugg (CH).</p><br><b class="page__text">Pug.js > HTML</b>
+        <p class="page__text">Um einen effizienteren und modularen HTML-Workflow zu erzielen, schlug ich die Verwendung von <a href="https://pugjs.org/api/getting-started.html">PUG.js</a> vor, welches HTML um Includes, Mixins, Variablen, Schleifen und Abfragen erweitert und aus HTML, einer Beschreibungssprache (Markup-Language), eine Programmiersprache macht. Diesen Vorschlag konnte ich mit Erfolg durchsetzen.</p>
+        <script src="https://gist.github.com/jonathanarbely/6b0396f2181e8d670ba4b65e3ae4629f.js"></script><b class="page__text">Einheitlicher Workflow durch Gulp.js</b>
+        <p class="page__text">Um zwischen den verschiedenen (und ggf. neu hinzukommenden) Entwicklern und Designern einen einheitlichen Workflow zu schaffen, schlug ich aus eigener Initiative das Workflow CLI-Tool Gulp.js vor. Durch ein einheitliches Set aus Befehlen und Buildprozessen kann die Arbeitsweise und die verwendeten Tools vereinheitlicht werden und modular weiterentwickelt und um Plugins erweitert werden. Und das plattformunabhängig (Windows, MacOS, Linux dist. kompatibel). Auch dieser Vorschlag wurde übernommen.</p>
+        <script src="https://gist.github.com/jonathanarbely/2560005d024bb6b1b7d7c77f659f0aa0.js"></script>
+        <p class="page__text">So ist es nun beispielsweise möglich, einen lokalen Entwicklungsserver zu starten, automatisiert einen Proxytunnel zu öffnen, um auf verschiedenen Geräten zu testen, SCSS zu kompilieren und CSS zu komprimieren sowie einiges mehr.</p><br><b class="page__text">Frontendlogik mit JavaScript</b>
+        <p class="page__text">Durch meine Fähigkeit und Erfahrung zur Umsetzung von interaktiven Modulen und Elementen im Frontend mit JavaScript wurde mir die Umsetzung einiger performance- und Usabilitykritischer Module anvertraut.</p>
+        <p class="page__text">1. Omnibox - Um die UX-Vorteile eines Dropdown-Selektors mit der Schnelligkeit einer Textsuche zu vereinen entwickelte ich eine universell Einsetzbare Omnibox, welche passend zur Eingabe im Textfeld relevante Vorschläge anzeigen kann. Dabei arbeitete ich mit statischen Daten, die später vom Entwicklerteam in Freiburg mit Echtdaten aus der Datenbank erweitert wurde.</p>
+        <p class="page__text">2. Datepicker - Basierend auf <a href="https://github.com/longbill/jquery-date-range-picker" target="_blank">Longbills Daterangepicker</a> und passend zu den Anforderungen integrierte ich das Plugin in die entsprechenden Seiten und erweiterte u. a. die Funktionalität der Tooltips, damit diese verschiedene Zustände annehmen können. So werden beim hover Zustand nicht nur die Anzahl der Nächte berechnet und angezeigt, sondern auch UX steigernde, anweisende Informationen wie "Bitte wählen Sie nun das Abreisedatum aus" oder "Keine Anreise möglich". <a href="https://www.interhome.at/oesterreich/kaernten/sirnitz-hochrindl/ferienhaus-sonnkegel-at9571.110.1/">Probieren Sie es aus!</a></p>
+        <p class="page__text">3. Bildergalerie - Die Anforderungen an den neuen Bildslider spiegelten die ambitionierten Ziele des ganzen Projekts wieder. Schnelle Interaktion, effizienter Code, erweiterbare Funktionalität und die Einsparung von Bandbreite waren Basisanforderungen an dieses Modul. Nach der Umsetzung des Designs in Photoshop und der statischen Umsetzung des Prototyps, entwickelte ich eine 611 Zeilen lange jQuery-Erweiterung für das beliebte Unslider.js Plugin, welches dieses um Lazyloading, diversen Performanceoptimierungen und einer Thumbnail-Funktionalität erweitert. Diese Erweiterung ist als <a href="https://github.com/jonathanarbely/unslider-lazyload" target="_blank">Open Source Projekt auf GitHub zu finden.</a></p>
+        <script src="//jsfiddle.net/jarbely/ofbLm6cq/2/embed/result/" async></script>
+        <p class="page__text">4. UI Elemente - Weniger fordernd, aber auch wichtig war die Programmierung von diversen Interfaceelementen über die gesamte Website verteilt. Von der gesamten Filtersuche auf der Suchergebnisseite auf der linken Seite über die Hauptnavigation mit Flyout bis zur mitscrollenden Sidebar der Detailseite basiert eine maßgebliche Menge aller möglichen Frontendinteraktionen auf meinem Code.</p><br><b class="page__text">Enough Tech Talk - Iteratives Design!</b>
+        <p class="page__text">Basierend auf der Marke, der Zielgruppe und den Vorstellungen & Wünschen des Teams entwarf ich zunächst eine alternative Designsprache zu einem bereits existierenden Entwurf. Modern (und möglichst minimalistisch) zu designen ist eine Herausforderung, wenn das Sicherheitsgefühl des Kunden, einfache, Konventionen befolgende Bedienkonzepte und eine große Menge an Informationen im Vordergrund stehen. Trotzdem sollte das neue Design kein Kompromiss, sondern das neue unverkennbare Gesicht der Marke Interhome im Web sein und ein entsprechendes Look & Feel vermitteln. Mein Konzept fand gefallen und entwickelte sich iterativ durch Feedbackrunden zu dem, was heute online sichtbar ist und Millionen von Nutzern jährlich ab sofort mit Ihrer Lieblingsmarke zur Buchung von Ferienresidenzen verbinden.</p><img class="page__image page__image--noshadow" src="../../assets/images/pixel/projects/interhome/ih-searchresult.PNG">
+        <div class="page__imagetitle">
+          <p class="page__author">/ Finales Design der Suchergebnisse</p>
+        </div><img class="page__image page__image--noshadow" src="../../assets/images/pixel/projects/interhome/ih-searchresult-concept.png">
+        <div class="page__imagetitle">
+          <p class="page__author">/ Frühes Konzept eines Suchergebnisses</p>
+        </div><img class="page__image page__image--noshadow" src="../../assets/images/pixel/projects/interhome/ih-searchresult-concept2.png">
+        <div class="page__imagetitle">
+          <p class="page__author">/ Frühes Konzept eines Suchergebnisses</p>
+        </div>
+        <p class="page__text">Ein professioneller Styleguide ist in Arbeit, damit auch nach meinem Ausscheiden aus dem Projekt ein einheitliches visuelles Gesamtbild fortgeführt wird.</p><img class="page__image page__image--large" src="../../assets/images/pixel/projects/interhome/ih-searchresults.png">
+        <div class="page__imagetitle">
+          <p class="page__author">/ Finales Design der Trefferseite (Suchergebnisseite)</p>
+        </div><img class="page__image page__image--large" src="../../assets/images/pixel/projects/interhome/ih-searchresults-concept.png">
+        <div class="page__imagetitle">
+          <p class="page__author">/ Frühes Konzept der Trefferseite (Suchergebnisseite)</p>
+        </div><img class="page__image page__image--large" src="../../assets/images/pixel/projects/interhome/ih-searchresults-topbar-concept.png">
+        <div class="page__imagetitle">
+          <p class="page__author">/ Konzept der Topbar auf der Trefferseite</p>
+        </div><img class="page__image page__image--large" src="../../assets/images/pixel/projects/interhome/ih-searchresults-topbar-concept2.png">
+        <div class="page__imagetitle">
+          <p class="page__author">/ Alternatives Konzept der Topbar auf der Trefferseite</p>
+        </div><img class="page__image page__image--large" src="../../assets/images/pixel/projects/interhome/ih-detailpage.png">
+        <div class="page__imagetitle">
+          <p class="page__author">/ Finales Design der Detailseite</p>
+        </div><img class="page__image page__image--large" src="../../assets/images/pixel/projects/interhome/ih-detailpage-scrolled.png">
+        <div class="page__imagetitle">
+          <p class="page__author">/ Finales Design der Detailseite im gescrollten Zustand mit sichtbarer Topbar</p>
+        </div><br><b class="page__text">Ikonographie</b>
+        <p class="page__text">Modern & deutlich unterstützen die einheitlichen Icons die schnelle Erfassung von relevanten oder gesuchten Informationen und Werten die Ästhetik weiter auf:</p><img class="page__image page__image page__image--noshadow" src="../../assets/images/pixel/projects/interhome/ih-iconset.png"><br>
+        <script src="https://gist.github.com/jonathanarbely/59677a8c28292ef74d65dd3f2470c9ae.js"></script>
+        <div class="page__imagetitle">
+          <p class="page__author">/ Einbindung der Icons als eigenständige Klassen nach BEM durch SASS Maps</p>
+        </div><br><b class="page__text">TLDR</b>
+        <p class="page__text">Das Projekt hat mich in all meinen Kompetenzbereichen gefordert. Dank meiner interdisziplinären Erfahrung konnte ich alle Aufgabenstellungen und Hürden meistern und darüber hinaus meine eigenen Verbesserungsvorschläge und Feedback einbringen. Dadurch entstand ein aktives und offenes Arbeitsverhältnis und schließlich ein besseres Endprodukt.</p>
+        <p class="page__text">Notiz: Dieser Beitrag kann nur einen kleinen Teil des Projekts darstellen. Codeausschnitte dienen als Beispiele und sind aus dem Kontext gehoben.</p><br>
+        <p class="page__text"><a href="https://www.interhome.at" target="_blank">Besuchen Sie interhome.at!</a></p>
+      </div>
+      <section class="loadmore c loadmore__anime"><img class="icon icon--xs" src="../../assets/images/vector/iconset/prev.svg"><a href="/#impressionen">Zurück zur Übersicht</a></section>
+    </main>
+  </body>
+  <footer class="c">
+    <div class="footer__inner">
+      <div class="footer__adress"><span class="ticket__description__title">Anschrift</span><br><br>
+        <p>Jonathan Arbely B.Sc.</p>
+        <p>Vogtsweg 3</p>
+        <p>79312 Emmendingen</p>
+        <p>Baden-Württemberg, DE</p>
+        <p class="footer__tax">/ Diese Adresse dient dem erhalt physischer Post und ist nicht Standort meines Büros. Siehe <a href="#kontakt">Kontaktdaten</a>.</p><br><br><a href="https://www.unicef.de/spenden/unicef-pate" target="_blank" title="UNICEF-Pate werden!"><img class="footer__more--logo" src="/assets/images/vector/logos/unicef.svg"></a>
+        <p>Magellan ist UNICEF-Pate und unterstützt UNICEF monatlich mit einer Spende.</p><br><a class="footer__tax" href="/impressum.html">/ Impressum</a>
+      </div>
+      <div class="footer__aboutmagellan"><span class="ticket__description__title">Ziel & Anspruch</span><br><br>
+        <p>Ziel und Anspruch von Magellan ist es, branchenbeste digitale Produkte und Dienstleistungen anzubieten. Das wird durch aktive Kommunikation und einer hingebungsvollen Umsetzung Ihrer Anforderungen & Wünsche erreicht. Grundlagen dafür bilden ein breites Spektrum an medientechnischem Know-how und langjährige Erfahrung sowie ständige Weiterentwicklung & Verbesserung.</p><br>
+        <p>Die Zufriedenheit meiner Kunden und Projektpartner steht an erster Stelle.</p>
+        <p>Dafür gehe ich die Extrameile.</p><br><br>
+        <div class="factsdontcareaboutyourfeelings">
+          <div class="factsdontcareaboutyourfeelings__inner"><span class="factsdontcareaboutyourfeelings__numeri" title="Interchalet Freiburg, Messmer Pen, Grundschule Windenreute-Maleck, Juristische Studiengesellschaft Karlsruhe e.V., Tariffuxx GmbH, Jüdische Gemeinde Emmendingen, Jüdisches Museum Emmendingen, Ferienwohnung Gutjahr, BEST Büro Express Services, AH Consult, Bies Büdie 05 eV., Südkurier Medienhaus GmbH, Metzger Kältetechnik, Codematch, CJS-CDKeys, Marx Reinigungs Service, Derwisch Pizza Döner, Gedenkstaettenverbund, Musikverein Buchholz, Connys Hundekensmanufaktur">20</span>
+            <p class="factsdontcareaboutyourfeelings__title">Zufriedene Kunden</p>
+          </div>
+          <div class="factsdontcareaboutyourfeelings__inner"><span class="factsdontcareaboutyourfeelings__numeri">4</span>
+            <p class="factsdontcareaboutyourfeelings__title">Jahre Erfahrung</p>
+          </div>
+          <div class="factsdontcareaboutyourfeelings__inner"><span class="factsdontcareaboutyourfeelings__numeri">2</span>
+            <p class="factsdontcareaboutyourfeelings__title">Faktor Verschlüsselung aller Kundendaten durch Kensington® VeriMark™ und Microsoft BitLocker</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer__hr">
+        <hr>
+      </div>
+      <div class="footer__branding footer__more"><a href="/">Magellan: Code & Design Consulting - est. 2013</a><span class="liluzivert liluzivert--s"></span><a href="https://github.com/jonathanarbely" target="_blank" title="Der gesamte Code dieser Website ist OpenSource und in einem Git-Repository einsehbar."><img src="/assets/images/vector/github.svg"></a></div>
+      <div class="footer__more"><a id="so" href="https://stackoverflow.com/users/4033913/jonathan-arbely?tab=profile" target="_blank"><img src="/assets/images/vector/so.svg"></a><a href="https://dribbble.com/jarbely" target="_blank"><img src="/assets/images/vector/dribbble.svg"></a><a href="https://www.instagram.com/jonathanoffroad" target="_blank"><img src="/assets/images/vector/instagram.svg"></a></div>
+    </div>
+  </footer>
+</html>
