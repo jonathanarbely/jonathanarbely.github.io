@@ -29,34 +29,26 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js" type="text/javascript" async></script>
     <script>
       window.addEventListener("load", function(){
-      
-      // Randomize Headerimage
-      var myArray = [
-        "url('/assets/images/pixel/magellanmedia-hero.jpg')",
-        "url('/assets/images/pixel/magellanmedia-hero-ii.jpg')",
-        "url('/assets/images/pixel/magellanmedia-hero-iii.jpg')"
-      ];
-      $('header').css('background-image',myArray[Math.floor(Math.random()*myArray.length)]);
-      
-      window.cookieconsent.initialise({
-        "palette": {
-          "popup": {
-            "background": "#ffffff",
-            "text": "#595959"
-          },
-          "button": {
-            "background": "transparent",
-            "border": "#ffcc00",
-            "text": "#ffcc00"
-          }
-        },
-        "position": "bottom-right",
-        "content": {
-          "message": "Wie bei fast jeder anderen Website auch, kommen hier Cookies zum Einsatz.",
-          "dismiss": "Okay",
-          "link": "Mehr Erfahren"
-        }
-      })});
+          window.cookieconsent.initialise({
+            "palette": {
+              "popup": {
+                "background": "#ffffff",
+                "text": "#595959"
+              },
+              "button": {
+                "background": "transparent",
+                "border": "#ffcc00",
+                "text": "#ffcc00"
+              }
+            },
+            "position": "bottom-right",
+            "content": {
+              "message": "Wie bei fast jeder anderen Website auch, kommen hier Cookies zum Einsatz.",
+              "dismiss": "Okay",
+              "link": "Mehr Erfahren"
+            }
+          })
+      });
     </script>
     <script src="/assets/plugins/jquery-smoothscroll/jquery-smoothscroll.min.js" type="text/javascript" defer></script>
   </head>
@@ -69,10 +61,25 @@
       <section class="title">
         <h2>Ihr Projekt,<br/>meine Ambition.
         </h2>
-        <h1>Professionelle Web- &amp; Appentwicklung / Pixelperfect UI- &amp; Screendesign / Print / Workflow- &amp; Performance-Consulting / SEO / On Site Presence
+        <h1> ※ Von mir gebaute Websites erreichen jährlich Millionen von Menschen ※<br/>Professionelle Web- &amp; Appentwicklung / Pixelperfect UI- &amp; Screendesign / Printdesign / Workflow- &amp; Performance-Consulting / SEO / On Site Presence
+          <!--if h1br
+          br
+          = h1br
+          -->
         </h1><a class="title__cta btn" href="#kompetenzen">Meine Kompetenzen</a>
       </section>
+      <div class="gradient--bottom"></div>
     </header>
+    <script>
+      // Randomize Headerimage
+      var myArray = [
+        "url('/assets/images/pixel/magellanmedia-hero.jpg')",
+        "url('/assets/images/pixel/magellanmedia-hero-ii.jpg')",
+        "url('/assets/images/pixel/magellanmedia-hero-iii.jpg')"
+      ];
+      $('header').css('background-image',myArray[Math.floor(Math.random()*myArray.length)]);
+      
+    </script>
     <main>
       <section class="knowhow" id="kompetenzen">
         <h3>Kompetenzen</h3>
