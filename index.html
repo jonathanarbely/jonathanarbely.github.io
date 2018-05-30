@@ -33,7 +33,8 @@
       // Randomize Headerimage
       var myArray = [
         "url('/assets/images/pixel/magellanmedia-hero.jpg')",
-        "url('/assets/images/pixel/magellanmedia-hero-ii.jpg')"
+        "url('/assets/images/pixel/magellanmedia-hero-ii.jpg')",
+        "url('/assets/images/pixel/magellanmedia-hero-iii.jpg')"
       ];
       $('header').css('background-image',myArray[Math.floor(Math.random()*myArray.length)]);
       
@@ -332,7 +333,7 @@
       <hr>
       <section class="team" id="team">
         <h3>Über mich</h3>
-        <div class="subtitle__wrapper"><span class="subtitle">Professionelle Webdienstleistungen, Design & Consulting aus dem Schwarzwald.</span></div><br><br><br><br>
+        <div class="subtitle__wrapper"><span class="subtitle">Professionelle Webdienstleistungen, Design & Consulting</span></div><br><br><br><br>
         <div class="portfolio__wrapper">
           <div class="portfolio">
             <div class="portfolio__image"></div>
@@ -347,7 +348,13 @@
       <hr>
       <section class="contact" id="kontakt">
         <h3>Kontakt</h3>
-        <div class="subtitle__wrapper"><span class="subtitle">Ob internationaler Konzern oder regionaler Verein,<br>Ihr Projekt ist meine Ambition.</span></div><br><br><br><br>
+        <div class="subtitle__wrapper"><span class="subtitle">Ob internationaler Konzern oder regionaler Verein, Ihr Projekt ist meine Ambition.<br></span></div>
+        <div class="subtitle__wrapper">
+          <div class="gps">
+            <div class="pulse"></div>
+            <div class="dot"></div>
+          </div><span class="subtitle ruby">Aktuell im Raum Stuttgart verfügbar</span>
+        </div><br><br><br><br>
         <div class="category">
           <div class="category__item category__item--active" id="switchMail"><img src="assets/images/vector/magellan-iconset/mail.svg">
             <h4>E-Mail</h4><span class="category__item__meta">Adresse</span><span class="goldbar"></span>
@@ -473,7 +480,8 @@
                 </div>
               </blockquote>
             </div>
-          </div>
+          </div><br>
+          <div class="c"> <a class="portfolio__content__cta btn btn--light" href="https://www.instagram.com/jonathanoffroad" target="_blank">Follow (720+)</a></div>
         </section>
         <script async defer src="https://platform.instagram.com/en_US/embeds.js"></script>
       </section>
