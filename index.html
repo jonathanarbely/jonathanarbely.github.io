@@ -7,7 +7,7 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      gtag('config', 'UA-50961830-5');
+      gtag('config', 'UA-50961830-5', {'anonymize_ip': true});
       
     </script>
     <title>Magellan Code &amp; Design Consulting - Premium Webdienstleistungen, Apps, Websites &amp; Printdesign aus Freiburg</title>
@@ -25,30 +25,52 @@
     <script src="/assets/plugins/waves/waves.min.js" type="text/javascript" async></script>
     <script src="/assets/javascript/interactive.min.js" type="text/javascript" async></script>
     <script src="/assets/javascript/nav.min.js" type="text/javascript" async></script>
-    <link rel="stylesheet" tpe="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" async>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js" type="text/javascript" async></script>
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
     <script>
       window.addEventListener("load", function(){
           window.cookieconsent.initialise({
-            "palette": {
-              "popup": {
-                "background": "#ffffff",
-                "text": "#595959"
+              "palette": {
+                  "popup": {
+                      "background": "#000"
+                  },
+                  "button": {
+                      "background": "transparent",
+                      "text": "#f1d600",
+                      "border": "#f1d600"
+                  }
               },
-              "button": {
-                "background": "transparent",
-                "border": "#ffcc00",
-                "text": "#ffcc00"
+              "type": "opt-out",
+              "content": {
+                  "message": "Auf dieser Website kommen Cookies von Google Analytics zum Einsatz. Es werden keine persönliche Daten gespeichert oder verarbeitet.",
+                  "dismiss": "Einverstanden",
+                  "link": "Mehr Erfahren (Datenschutz)",
+                  "deny": "Cookies blockieren",
+                  "href": "./impressum.html"
               }
-            },
-            "position": "bottom-right",
-            "content": {
-              "message": "Wie bei fast jeder anderen Website auch, kommen hier Cookies zum Einsatz.",
-              "dismiss": "Okay",
-              "link": "Mehr Erfahren"
-            }
-          })
+          });
+      
+          $('.cc-deny').click(function(){
+              gaOptout();
+              //console.log('cookie opt-out');
+          });
       });
+      
+      // Set to the same value as the web property used on the site
+      var gaProperty = 'UA-50961830-5';
+      
+      // Disable tracking if the opt-out cookie exists.
+      var disableStr = 'ga-disable-' + gaProperty;
+      if (document.cookie.indexOf(disableStr + '=true') > -1) {
+          window[disableStr] = true;
+      }
+      
+      // Opt-out function
+      function gaOptout() {
+          document.cookie = disableStr + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+          window[disableStr] = true;
+          //console.log('cookie deleted');
+      }
     </script>
     <script src="/assets/plugins/jquery-smoothscroll/jquery-smoothscroll.min.js" type="text/javascript" defer></script>
   </head>
@@ -683,50 +705,49 @@
           <svg class="quote__customerbranding quote__customerbranding--inactive quote__customerbranding--jsg">
             <use xlink:href="#testimonials--jsg"></use>
           </svg>
-        </div><br><br><br><br>
-        <hr>
-        <section class="instagram">
-          <h3>Instagram</h3>
-          <div class="subtitle__wrapper"><span class="subtitle">Feed.</span></div><br><br>
-          <div class="c c--nowrap">
-            <div class="c__inner--xscrolling">
-              <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-version="7" style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:100%;">
-                <div style="padding:8px;">
-                  <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50.0% 0; text-align:center; width:100%;">
-                    <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div>
-                  </div>
-                  <p style=" margin:8px 0 0 0; padding:0 4px;"><a href="https://www.instagram.com/p/BcRESWFFHK8/" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank">Find my classy collection of black &amp; white wallpapers titled &#39;New Year in Paris&#39; for your Phone, PC or Mac Display and Ultrawide Monitor under the Blog section of my Portfolio. Free to use for you to enjoy! Link in Bio. 🖤📷 https://bymagellan.co/blog/2017/parisnewyears.html #paris #wallpaper #iphone #black #clay #wallpapers #blackandwhitephotography #blackandwhitephoto #blackandwhite #bw #photography #streetphotography #freewallpaper #collection #wallpapercollection #magellan #vsco #vscox #marais #lemarais #surfacestudio #surface #mockup #iphonex</a></p>
-                  <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">Ein Beitrag geteilt von Jonathan Arbely (@jonathanoffroad) am
-                    <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2017-12-04T04:19:50+00:00">3. Dez 2017 um 20:19 Uhr</time>
-                  </p>
-                </div>
-              </blockquote>
-              <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-version="7" style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:100%;">
-                <div style="padding:8px;">
-                  <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50.0% 0; text-align:center; width:100%;">
-                    <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div>
-                  </div>
-                  <p style=" margin:8px 0 0 0; padding:0 4px;"><a href="https://www.instagram.com/p/Bb3CFEPFWmn/" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank">It&#39;s always great when discarded concepts become useful again! This is a blog design-concept I did some time ago. Complete with a styleguide. I reused and further developed some elements to use on my portfolio&#39;s blog over at bymagellan.co! Swipe right to see more. ⌚ #screendesign #blog #webdedign #ui #ipad #mockup #web #design #black #styleguide #freelance #freelancer @welovewebdesign #welovewebdesign #typography #adventure #travelblog #utah #scenic #earthroamer</a></p>
-                  <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">Ein Beitrag geteilt von Jonathan Arbely (@jonathanoffroad) am
-                    <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2017-11-24T01:40:17+00:00">23. Nov 2017 um 17:40 Uhr</time>
-                  </p>
-                </div>
-              </blockquote>
-              <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-version="7" style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:100%;">
-                <div style="padding:8px;">
-                  <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50.0% 0; text-align:center; width:100%;">
-                    <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div>
-                  </div>
-                  <p style=" margin:8px 0 0 0; padding:0 4px;"><a href="https://www.instagram.com/p/BbrkWH9l6be/" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank">Magellan 2.0 is online and ready for 2018! 〽 https://bymagellan.co After months of hard work, rethinking the design language, refocusing content and rewriting the whole site from the ground up using latest technologies and applying best practices, the latest and best version of my portfolio is online and available for everyone to visit &amp; experience! Magellan Media is now Magellan Code &amp; Design 🐺 A huge thanks to everyone who sent me their feedback in the last two weeks after the &#34;silent&#34; go-live! Check out the code when you get a chance: https://github.com/jonathanarbely/bymagellan Feedback is highly appreciated! Onwards! 🎉</a></p>
-                  <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">Ein Beitrag geteilt von Jonathan Arbely (@jonathanoffroad) am
-                    <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2017-11-19T14:49:55+00:00">19. Nov 2017 um 6:49 Uhr</time>
-                  </p>
-                </div>
-              </blockquote>
-            </div>
-          </div><br>
-          <div class="c"> <a class="portfolio__content__cta btn btn--light" href="https://www.instagram.com/jonathanoffroad" target="_blank">Follow (730+)</a></div>
-        </section>
+        </div><br><br>
+        <!--br-->
+        <!--br-->
+        <!--hr-->
+        <!--section.instagram
+        h3 Instagram
+        div.subtitle__wrapper
+            span.subtitle Feed.
+        br
+        br
+        .c.c--nowrap
+            .c__inner--xscrolling
+                blockquote(class="instagram-media" data-instgrm-captioned data-instgrm-version="7" style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:100%;")
+                    div(style="padding:8px;")
+                        div(style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50.0% 0; text-align:center; width:100%;")
+                            div(style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;")
+                        p(style=" margin:8px 0 0 0; padding:0 4px;")
+                            a(href="https://www.instagram.com/p/BcRESWFFHK8/" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank") Find my classy collection of black &amp; white wallpapers titled &#39;New Year in Paris&#39; for your Phone, PC or Mac Display and Ultrawide Monitor under the Blog section of my Portfolio. Free to use for you to enjoy! Link in Bio. 🖤📷 https://bymagellan.co/blog/2017/parisnewyears.html #paris #wallpaper #iphone #black #clay #wallpapers #blackandwhitephotography #blackandwhitephoto #blackandwhite #bw #photography #streetphotography #freewallpaper #collection #wallpapercollection #magellan #vsco #vscox #marais #lemarais #surfacestudio #surface #mockup #iphonex
+                        p(style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;") Ein Beitrag geteilt von Jonathan Arbely (@jonathanoffroad) am
+                            time(style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2017-12-04T04:19:50+00:00") 3. Dez 2017 um 20:19 Uhr
+        
+                blockquote(class="instagram-media" data-instgrm-captioned data-instgrm-version="7" style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:100%;")
+                    div(style="padding:8px;")
+                        div(style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50.0% 0; text-align:center; width:100%;")
+                            div(style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;")
+                        p(style=" margin:8px 0 0 0; padding:0 4px;")
+                            a(href="https://www.instagram.com/p/Bb3CFEPFWmn/" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank") It&#39;s always great when discarded concepts become useful again! This is a blog design-concept I did some time ago. Complete with a styleguide. I reused and further developed some elements to use on my portfolio&#39;s blog over at bymagellan.co! Swipe right to see more. ⌚ #screendesign #blog #webdedign #ui #ipad #mockup #web #design #black #styleguide #freelance #freelancer @welovewebdesign #welovewebdesign #typography #adventure #travelblog #utah #scenic #earthroamer
+                        p(style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;") Ein Beitrag geteilt von Jonathan Arbely (@jonathanoffroad) am
+                            time(style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2017-11-24T01:40:17+00:00") 23. Nov 2017 um 17:40 Uhr
+        
+                blockquote(class="instagram-media" data-instgrm-captioned data-instgrm-version="7" style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:100%;")
+                    div(style="padding:8px;")
+                        div(style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50.0% 0; text-align:center; width:100%;")
+                            div(style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;")
+                        p(style=" margin:8px 0 0 0; padding:0 4px;")
+                            a(href="https://www.instagram.com/p/BbrkWH9l6be/" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank") Magellan 2.0 is online and ready for 2018! 〽 https://bymagellan.co After months of hard work, rethinking the design language, refocusing content and rewriting the whole site from the ground up using latest technologies and applying best practices, the latest and best version of my portfolio is online and available for everyone to visit &amp; experience! Magellan Media is now Magellan Code &amp; Design 🐺 A huge thanks to everyone who sent me their feedback in the last two weeks after the &#34;silent&#34; go-live! Check out the code when you get a chance: https://github.com/jonathanarbely/bymagellan Feedback is highly appreciated! Onwards! 🎉
+                        p(style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;") Ein Beitrag geteilt von Jonathan Arbely (@jonathanoffroad) am
+                            time(style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2017-11-19T14:49:55+00:00") 19. Nov 2017 um 6:49 Uhr
+        br
+        .c  
+            a.portfolio__content__cta.btn.btn--light(href='https://www.instagram.com/jonathanoffroad' target='_blank') Follow (730+)
+        
+        -->
         <script async defer src="https://platform.instagram.com/en_US/embeds.js"></script>
       </section>
     </main>
