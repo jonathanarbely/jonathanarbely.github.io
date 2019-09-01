@@ -1,7 +1,5 @@
 RewriteEngine On
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^([^\.]+)$ $1.html [NC,L]
 
-RedirectPermanent https://bymagellan.co/index.en.html https://bymagellan.co/index.en
-Redirect 301 https://bymagellan.co/index.en.html https://bymagellan.co/index.en
-Redirect 301 /index.en.html https://bymagellan.co/index.en
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html [NC,L]
