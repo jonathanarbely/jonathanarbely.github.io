@@ -3,3 +3,5 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^\.]+)$ $1.html [NC,L]
 
 RedirectPermanent https://bymagellan.co/index.en.html https://bymagellan.co/index.en
+Redirect 301 https://bymagellan.co/index.en.html https://bymagellan.co/index.en
+Redirect 301 /index.en.html https://bymagellan.co/index.en
