@@ -87,6 +87,17 @@
           //console.log('cookie deleted');
       }
     </script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6Lf7TL0UAAAAAHuw05hkQ1nZ6u39FoBzDwlorVel"></script>
+    <script>
+      grecaptcha.ready(function() {
+          grecaptcha.execute('_reCAPTCHA_site_key_', {action: 'homepage'}).then(function(token) {
+             ...
+          });
+      });
+      grecaptcha.ready(function() {
+          grecaptcha.execute('6Lf7TL0UAAAAAHuw05hkQ1nZ6u39FoBzDwlorVel', {action: 'homepage'});
+      });
+    </script>
     <script src="/assets/plugins/jquery-smoothscroll/jquery-smoothscroll.min.js" type="text/javascript" defer></script>
   </head>
   <body>
@@ -484,7 +495,7 @@
         </div><br><br><br>
         <div class="c c--overflow">
           <div class="pamphlet" id="mail">
-            <div class="pamphlet__description"><span class="pamphlet__description__tag">E-Mail-Adresse</span><a class="pamphlet__description__title" href="mailto:ahoy@bymagellan.co">ahoy@bymagellan.co</a>
+            <div class="pamphlet__description"><span class="pamphlet__description__tag">E-Mail-Adresse</span><a class="pamphlet__description__title" href="mailto:me@jonathanarbely.de">hallo@bymagellan.co</a>
               <div class="pamphlet__description__anchor__wrapper">
                 <svg class="icon icon--s">
                   <use xlink:href="#iconset--briefcase"></use>
