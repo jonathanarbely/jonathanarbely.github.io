@@ -395,7 +395,7 @@
         <h3>Über uns</h3>
         <div class="subtitle__wrapper"><span class="subtitle">Wählen Sie Ihr Team.</span></div><br><br><br><br>
         <div class="portfolio__wrapper">
-          <div class="portfolio"><img class="portfolio__image" src="/assets/images/pixel/magellan-jonathanarbely.png">
+          <div class="portfolio"><img class="portfolio__image lightmode" src="/assets/images/pixel/magellan-jonathanarbely.png"><img class="portfolio__image darkmode" src="/assets/images/pixel/magellan-jonathanarbely-dark.png">
             <div class="portfolio__content">
               <svg class="portfolio__content__ornament">
                 <use xlink:href="#ornament"></use>
@@ -408,7 +408,7 @@
               </svg><a class="portfolio__content__cta btn btn--light" href="mailto:jonathan@bymagellan.co" target="_blank">jonathan@bymagellan.co</a>
             </div>
           </div>
-          <div class="portfolio"><img class="portfolio__image" src="/assets/images/pixel/magellan-valeriaraffa.png">
+          <div class="portfolio"><img class="portfolio__image lightmode" src="/assets/images/pixel/magellan-valeriaraffa.png"><img class="portfolio__image darkmode" src="/assets/images/pixel/magellan-valeriaraffa-dark.png">
             <div class="portfolio__content">
               <svg class="portfolio__content__ornament">
                 <use xlink:href="#ornament"></use>
@@ -553,7 +553,7 @@
         </div>
         <div class="c c--overflow quote quote--ic">
           <div class="card" id="">
-            <div class="card__description"><span class="card__description__tag">Peter Kranz, IT-Leiter Inter Chalet / CIO Holiday Home Division<span class="card__description__date">04/2018</span></span><span class="card__description__title">interhome.at</span>
+            <div class="card__description"><span class="card__description__tag">Peter Kranz, ehem. IT-Leiter Inter Chalet / CIO Holiday Home Division<span class="card__description__date">04/2018</span></span><span class="card__description__title">interhome.at</span>
               <p>Magellan Code &amp; Design Consulting unterstützte die Inter Chalet Ferienhausgesellschaft mbH und Interhome AG in der Webentwicklung der neuen Interhome Website. Hierbei war Herr Arbely maßgeblich am Design sowie der Umsetzung der Start-, Detail- und Trefferseite beteiligt und leistete aufgrund seiner permanenten Suche nach Performanceverbesserungen einen essentiellen Beitrag zur erfolgreichen Umsetzung des Projekts. Unser Frontendworkflow konnte gemäß den erbrachten Empfehlungen angepasst und optimiert werden. Wir haben hier sehr von den umfangreichen Kenntnissen bezüglich des Workflows mit Gulp.js von Herrn Arbely profitiert. Wir möchten uns an dieser Stelle für die hervorragende und erfolgreiche Zusammenarbeit mit Herrn Arbely bedanken. Wir waren mit der Zusammenarbeit und dem Ergebnis sehr zufrieden.</p>
             </div>
           </div>
@@ -583,7 +583,7 @@
               <p>Vogtsweg 3</p>
               <p>79312 Emmendingen</p>
               <p>Baden-Württemberg, DE</p>
-              <p class="footer__tax">/ Diese Adresse dient dem Erhalt physischer Post und ist nicht Standort unseres Büros. Siehe <a href="#kontakt">Kontaktdaten</a>.</p><br><a class="footer__tax" href="/impressum.html">/ Impressum</a>
+              <p class="footer__tax">Diese Adresse dient dem Erhalt physischer Post und ist nicht Standort unseres Büros. Siehe <a href="#kontakt">Kontaktdaten</a>.</p><br><a class="footer__tax" href="/impressum.html">/ Impressum</a>
             </div>
             <div class="footer__aboutmagellan"><span class="ticket__description__title">Ziel & Anspruch</span><br><br>
               <p>Ziel und Anspruch von Magellan ist es, branchenbeste digitale Produkte und Dienstleistungen anzubieten. Das wird durch aktive Kommunikation und einer hingebungsvollen Umsetzung Ihrer Anforderungen & Wünsche erreicht. Grundlagen dafür bilden ein breites Spektrum an medientechnischem Know-how und langjährige Erfahrung sowie ständige Weiterentwicklung & Verbesserung.</p><br>
@@ -604,21 +604,25 @@
             <div class="footer__hr">
               <hr>
             </div>
-            <div class="footer__branding footer__more"><a href="/">Magellan Code & Design Consulting - est. 2013</a><span class="liluzivert liluzivert--s"></span><a href="https://github.com/jonathanarbely" target="_blank" title="Der gesamte Code dieser Website ist OpenSource und in einem Git-Repository einsehbar.">
+            <div class="footer__more footer__branding"><a href="/">Magellan Code & Design Consulting - est. 2013</a><span class="liluzivert liluzivert--s"></span><a href="https://github.com/jonathanarbely" target="_blank" title="Der gesamte Code dieser Website ist Open-Source und in einem Git-Repository einsehbar.">
                 <svg>
                   <use xlink:href="#github"></use>
                 </svg></a></div>
+            <div class="footer__theme">
+              <div class="theme darkmode"><span class="theme__label" title="Ihr Betriebssystem befindet sich im &quot;Darkmode&quot;. Die Anzeige auf dieser Website passt sich dem an.">🌑 Dunkelmodus</span></div>
+              <div class="theme lightmode"><span class="theme__label" title="Ihr Betriebssystem befindet sich in der hellen Standardanzeige.">🌕 Tagmodus</span></div>
+            </div>
             <div class="footer__more"><a href="https://medium.com/@jonathanarbely" target="_blank">
                 <svg>
                   <use xlink:href="#medium"></use>
-                </svg></a><a id="sorep" href="https://stackoverflow.com/users/4033913/jonathan-arbely?tab=profile" target="_blank">
+                </svg></a><a href="https://stackoverflow.com/users/4033913/jonathan-arbely?tab=profile" target="_blank" id="sorep">
                 <svg>
                   <use xlink:href="#so"></use>
                 </svg></a><a href="https://dribbble.com/jarbely" target="_blank">
-                <svg>
+                <svg class="footer__sm">
                   <use xlink:href="#dribbble"></use>
                 </svg></a><a href="https://www.instagram.com/bymagellan/" target="_blank">
-                <svg>
+                <svg class="footer__sm">
                   <use xlink:href="#instagram"></use>
                 </svg></a></div>
           </div>
