@@ -36,8 +36,7 @@
     <link rel="stylesheet" href="/assets/stylesheets/artofmagellan.css"/>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:700|Playfair+Display+SC" rel="stylesheet"/>
     <link rel="stylesheet" href="assets/stylesheets/pagespecific/index.css"/>
-    <script src="/assets/plugins/jquery/jquery.min.js"></script>
-    <script src="/assets/plugins/waves/waves.min.js" async></script>
+    <script src="/assets/bundle.js"></script>
     <script src="/assets/javascript/interactive.min.js" async></script>
     <script src="/assets/javascript/nav.min.js" async></script>
     <script>
@@ -88,11 +87,11 @@
     <script>
       // Randomize Headerimage
       var myArray = [
-        "url('/assets/images/pixel/magellanmedia-hero.jpg')",
-        "url('/assets/images/pixel/magellanmedia-hero-ii.jpg')",
-        "url('/assets/images/pixel/magellanmedia-hero-iii.jpg')"
+          "url('/assets/images/pixel/magellanmedia-hero.jpg')",
+          "url('/assets/images/pixel/magellanmedia-hero-ii.jpg')",
+          "url('/assets/images/pixel/magellanmedia-hero-iii.jpg')"
       ];
-      $('header').css('background-image',myArray[Math.floor(Math.random()*myArray.length)]);
+      $('header').css('background-image', myArray[Math.floor(Math.random()*myArray.length)]);
       
     </script>
     <main>
